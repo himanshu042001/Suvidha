@@ -1,122 +1,114 @@
-import React from 'react'
-
-function TeacherLogin() {
-    let myFunction = () =>{
-        var x = document.getElementById("myInput");
-        if (x.type === "password") {
-            x.type = "text";
-        } else {
-            x.type = "password";
-        }
-    }
+import React from "react";
+import "../css/Login.css";
+import a from '../images/login-image.svg'
+import b from '../images/academy-logo.png'
+import { Link } from "react-router-dom";
+const TeacherLogin = () => {
   return (
-    <div> <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto register">
-    <div class="card card0 border-0">
-        <div class="row d-flex">
-            <div class="col-lg-6">
-
-                <div class="row px-5">
-                    <div class="col-md-8 align-self-start c">
-                        <h2>Resister As a Teacher</h2>
-                    </div>
-                    <div class="col-md-3 align-self-end">
-                        <div class="btn-group">
-                            <a href="student-signup.html" class="btn">Student</a>
-                            <a href="#" class="btn  btn-outline-primary active">Teacher</a>
-                        </div>
-                    </div>
+    <>
+    <div id="bg4189">
+      <div className="container-fluid px-1 px-md-5 px-lg-1 px-xl-5  mx-auto">
+        <div className="carde card0 border-0">
+          <div className="row d-flex">
+            <div className="col-lg-6">
+              <div className="card1 pb-5">
+                <div className="row">
+                  <p>
+                    <img
+                      src={b}
+                      className="logo"
+                      alt="academy-logo"
+                    />
+                    Suvidha Foundation
+                  </p>
                 </div>
-                <br/>
-
-                <form>
-
-
-                    <div class="row px-3 mb-4">
-                        <i class="fa fa-user fa-lg me-3 fa-fw" title="User Name"></i>
-                        <div class="form-outline flex-fill mb-0">
-                            <input type="text" class="form-control" placeholder="Full Name" required />
-                        </div>
-                    </div>
-
-                    <div class="row px-3 mb-4">
-                        <i class="fa fa-envelope fa-lg me-3 fa-fw" title="Enter your email"></i>
-                        <div class="form-outline flex-fill mb-0">
-                            <input type="email" class="form-control" placeholder="Email Address" required />
-                        </div>
-                    </div>
-                    <div class="row px-3 mb-4">
-                        <i class="fa fa-mobile fa-lg me-3 fa-fw" title="Mobile Number"></i>
-                        <div class="form-outline flex-fill mb-0">
-                            <input type="tel" class="form-control" placeholder="Mobile" required />
-                        </div>
-                    </div>
-
-                    <div class="row px-3 mb-4">
-                        <i class="fa fa-lock fa-lg me-3 fa-fw" title="Password"></i>
-                        <div class="form-outline flex-fill mb-0">
-                            <input type="password" id="myInput" class="form-control" placeholder="Enter Your Password" required />
-                        </div>
-                        <div class="form-check d-flex justify-content-center mb-4 px-1">
-                            &nbsp; <input type="checkbox" onClick={myFunction}/> &nbsp; Show Password
-                        </div>
-
-                    </div>
-
-                    <div class="row px-3 mb-4">
-                        <i class="fa fa-key fa-lg me-3 fa-fw" title="Confirm Password"></i>
-                        <div class="form-outline flex-fill mb-0">
-                            <input type="password" class="form-control" placeholder="Confirm Your Password" required />
-                        </div>
-                    </div>
-                    <div class="form-group col-lg-12 mx-auto mb-0">
-                        <a href="#" class="btn btn-primary btn-block py-2" id="button">
-                            <span class="font-weight-bold" data-toggle="tooltip" title="Register">Create your account</span>
-                        </a>
-                    </div>
-
-            
-                    <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
-                        <div class="border-bottom w-100 ml-5"></div>
-                        <span class="px-2 small text-muted font-weight-bold text-muted">OR</span>
-                        <div class="border-bottom w-100 mr-5"></div>
-                    </div>
-
-
-                    <div class="form-group col-lg-12 mx-auto">
-                        <a href="#" class="btn btn-primary btn-block py-2 btn-google" id="button">
-                            <i class="fa fa-google mr-2"></i>
-                            <span class="font-weight-bold">Continue with Google</span>
-                        </a>
-                        <a href="#" class="btn btn-primary btn-block py-2 btn-facebook" id="button">
-                            <i class="fa fa-facebook mr-2"></i>
-                            <span class="font-weight-bold">Continue with Facebook</span>
-                        </a>
-                    </div>
-
-
-                    <div class="text-center w-100">
-                        <p class="text-muted font-weight-bold">Already Registered? <a href="login.html" class="text-primary ml-2">Login</a></p>
-                    </div>
-
-                </form>
-            </div>
-            <div class="col-lg-6">
-                <div class="card1 pb-5">
-                    <div class="row">
-                        <p class="company"><img src="academy-logo.png" class="logo"/>Suvidha Foundation</p>
-                    </div>
-                    <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> <img src="teacher-signup-image.png" class="image"/> </div>
+                <div className="row px-3 justify-content-center mt-4 mb-5 border-line">
+                  <img
+                    src={a}
+                    className="image"
+                    alt="login-iimage"
+                  />
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="bg-blue py-4">
-            <div class="row px-3"> <small class="ml-4 ml-sm-5 mb-2">Copyright &copy; 2022. All rights reserved: Suvidha Foundation</small>
-                <div class="social-contact ml-4 ml-sm-auto"> <span class="fa fa-facebook mr-4 text-sm"></span> <span class="fa fa-google-plus mr-4 text-sm"></span> <span class="fa fa-linkedin mr-4 text-sm"></span> <span class="fa fa-twitter mr-4 mr-sm-5 text-sm"></span> </div>
+            <div className="col-lg-6">
+              <div className="card2 card border-0 px-4 py-5">
+                <div className="row mb-4 px-3">
+                  <h6 className="mb-0 mr-4 mt-2">Sign in with</h6>
+                  <div className="google text-center mr-3">
+                    <div className="fa fa-google"></div>
+                  </div>
+                  <div className="facebook text-center mr-3">
+                    <div className="fa fa-facebook"></div>
+                  </div>
+                </div>
+                <div className="row px-3 mb-4">
+                  <div className="line"></div>
+                  <small className="or text-center">Or</small>
+                  <div className="line"></div>
+                </div>
+                <div className="d-flex flex-row align-items-center mb-4">
+                  <i className="fa fa-envelope fa-lg me-3 fa-fw"></i>
+                  <div className="form-outline flex-fill mb-0">
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="Enter Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="d-flex flex-row align-items-center mb-4">
+                  <i className="fa fa-key fa-lg me-3 fa-fw"></i>
+                  <div className="form-outline flex-fill mb-0">
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="Enter Your Password"
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="row px-3 mb-4">
+                  <div className="custom-control custom-checkbox custom-control-inline">
+                    <input
+                      id="chk1"
+                      type="checkbox"
+                      name="chk"
+                      className="custom-control-input"
+                    />
+                    <label for="chk1" className="custom-control-label text-sm">
+                      Remember me
+                    </label>
+                  </div>
+                  <a href="#" className="ml-auto mb-0 text-sm">
+                    Forgot Password?
+                  </a>
+                </div>
+                <div className="row mb-3 px-3">
+                  <Link to="/TeacherDashboard" className="btn btn-blue text-center">
+                    {/* <button type="submit"  > */}
+                      Login
+                    {/* </button> */}
+                  </Link>
+                </div>
+                <div className="row mb-4 px-3">
+                  <small className="font-weight-bold">
+                    Don't have an account?
+                    <Link to='/Tsignup' className="text-danger">
+                      Register
+                    </Link>
+                  </small>
+                </div>
+              </div>
             </div>
+          </div>
+          
         </div>
-    </div>
-</div></div>
-  )
-}
+      </div>
+      </div>
+    </>
+  );
+};
 
-export default TeacherLogin
+export default TeacherLogin;
