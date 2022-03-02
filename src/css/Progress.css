@@ -1,309 +1,77 @@
-/* ProgressPage */
+import React, { Component } from 'react'
+import '../css/myprogress.css'
+export default class Progress extends Component {
+  render() {
+    return (
+      <div>
+        <div>
+        <section id="secProgress">
+          <div className="videoProg12">
+            <div className="clr-oly12"></div>
+            <video autoplay loop muted>
+              <source src="pic/Blue - 9809.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div className="contProg12">
+            <h1 className="headProg12">COURSE PROGRESS </h1>
+            <div id="sPB12">
+              <div className="stpProg12">
+                <img className="coursepic" src="pic/course content.jpg" alt="" />
+                <br />
+                <p className="stpProg12-txtProg12">COURSE CONTENT</p>
+                <div className="bltpr12 bPr1">
+                  <i className="fadk fa-check"></i>{" "}
+                </div>
+              </div>
+              <div className="stpProg12">
+                <img className="coursepic" src="pic/assignments.jpg" alt="" />
+                <br />
 
+                <p className="stpProg12-txtProg12">ASSIGNMENTS</p>
+                <div className="bltpr12 bPr2">
+                  <i className="fa fa-check"></i>
+                </div>
+              </div>
+              <div className="stpProg12">
+                <img className="coursepic" src="pic/quiz.jpg" alt="" />
+                <br />
 
-*{
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
+                <p className="stpProg12-txtProg12">QUIZ</p>
+                <div className="bltpr12 bPr3">
+                  <i className="fa fa-check"></i>
+                </div>
+              </div>
+              <div className="stpProg12">
+                <img className="coursepic" src="pic/certification.jpg" alt="" />
+                <br />
 
-}
+                <p className="stpProg12-txtProg12">CERTIFICATION</p>
+                <div className="bltpr12 bPr4">
+                  <i className="fa fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div id="mainProg12">
+              <div className="currentlyProg12">
+                <p>YOU HAVE COMPLETE - </p>
+                <p> PART-</p>
+                <p id="contentProg12" className="text-centerProg12">
+                  {" "}
+                  1
+                </p>
+              </div>
 
+              <button id="previousBtnProg12">Previous</button>
+              <button id="nextBtnProg12">Next</button>
+              <button id="finishBtnProg12">Finish</button>
+            </div>
+          </div>
+        </section>
 
-
-.sec{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-}
-
-.video-containerr{
-	position:absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
-
-.color-overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: rgb(176, 245, 245);
-	width: 100%;
-	height: 100vh;
-	opacity: 0.6;
-}
-
-.headr{
-    text-align: center;
-	font-size: 35px;
-    margin-bottom: 90px;
-}
-
-.text-center{
-    margin-bottom: 20px;
-}
-
-#stepProgressBar  {
-	display:  flex;
-	justify-content:  space-between;
-	align-items:  flex-end;
-	width:  70%;
-	margin:  0  auto;
-	margin-bottom:  40px;
-}
-
-.step  {
-text-align:  center;
-}
-
-
-
-.step-text  {
- margin-bottom:  14px;
- color:  #28a745;
-}
-
-
-.bullt {
-	border: 1px solid #28a745;
-	height: 23px;
-	width: 23px;
-	border-radius: 100%;
-	color: #28a745;
-	display: inline-block;
-	position: relative;
-	transition: background-color 500ms;
-    line-height:20px;
-}
-
-
-
-.bullt.completed  {
-	color:  white;
-	background-color:  #28a745;
-}
-
-
-
-.bullt.completed::after {
-	content: '';
-	position: absolute;
-	/* right: -150px; */
-	right: -660%;
-	bottom: 10px;
-	height: 1px;
-	/* width: 150px; */
-	width: 630%;
-	background-color: #28a745;
-}
-
-/* Base styles and helper stuff */
-.hidden  {
-	display:  none;
-}
- 
-button  {
-	padding:  5px  10px;
-	border:  1px  solid  black;
-	transition:  250ms background-color;
-}
-
-button:hover  {
-	cursor:  pointer;
-	background-color:  black;
-	color:  white;
-}
-
-button:disabled:hover  {
-	opacity:  0.6;
-	cursor:  not-allowed;
-}
-
-.text-center  {
-	text-align:  center;
-}
-  
-.containr  {
-    width: 80%;
-	/* max-width:  400px; */
-	margin:  0  auto;
-	/* margin-top:  20px; */
-	padding:  40px;
-	z-index: 1;
-}
-
-.currently{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin: 25PX auto;
-    font-size: 30px;
-}
-#main{
-    text-align: center;
-}
-
-
-.coursepic {
-    width: 130px;
-    border-radius: 12px;
-    margin-bottom: 0px;
-}
-
-
-
-@media (max-width: 900px){
-
-    #stepProgressBar  {
-        display:  flex;
-        justify-content:  space-between;
-        align-items:  flex-end;
-        width:  90%;
-        margin:  0  auto;
-        margin-bottom:  40px;
-    }
-    
-
-
-    .bullt.completed::after {
-		content: '';
-		position: absolute;
-		/* right: -150px; */
-		right: -630%;
-		bottom: 10px;
-		height: 1px;
-		/* width: 150px; */
-		width: 620%;
-		background-color: #28a745;
-	}
-
-	.coursepic {
-		margin-right: 14px;
-		width: 100px;
-		border-radius: 12px;
-		margin-bottom: 0px;
-	}
-
-}
-
-@media (max-width: 700px){
-
-	sectionn{
-		position: relative;
-		width: 100%;
-		/* height: 100%; */
-		height: 780px;
-		display:flex;
-		align-items: center;
-		justify-content: center;
-		overflow: hidden;
-	}
-
-
-	.video-container{
-		position:absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 850px;
-	}
-
-	.color-overlay{
-		position: absolute;
-		top: 0;
-		left: 0;
-		background: rgb(176, 245, 245);
-		width: 100%;
-		height: 720px;
-		opacity: 0.6;
-	}
-
-    #stepProgressBar  {
-        display:contents;
-        justify-content:  space-between;
-        align-items:  flex-end;
-        width:  100%;
-		
-        margin:  0  auto;
-        margin-bottom:  80px;
-    }
-
-	.step  {
-		text-align:  center;
-		margin-bottom: 60px;
-		}
-
-		.b1{
-			right: -40px;
-		}
-
-		.b2{
-			right: -73px;
-		}
-
-		.b3{
-			right: -151px;
-		}
-
-		.b4{
-			right: -68px;
-		}
-
-	
-		.bullt.completed::after {
-			content: '';
-			position: absolute;
-			
-			right: 10px;
-			bottom: -84px;
-			height: 90px;
-			
-			width: 2px;
-			background-color: #28a745;
-		}
-
-
-	.container  {
-		width: 100%;
-		height: 100%;
-		/* max-width:  400px; */
-		margin:  0  auto;
-		/* margin-top:  20px; */
-		padding:  40px;
-		z-index: 1;
-	}
-	.step  {
-		display:flex;
-		text-align:  center;
-		}
-
-	.header{
-		text-align: center;
-		font-size: 25px;
-		margin: 8px;
-		margin-bottom: 40px;
-	}
-	
-
-	.coursepic {
-		width: 80px;
-		border-radius: 8px;
-		margin-bottom: 0px;
-	}
-
-	#main{
-		text-align: center;
-		display: block;
-		
-	}
-
-	.currently{
-		font-size: 16px;
-	}
-	
+        <script src="app.js"></script>
+        <script src="app2.js"></script>
+      </div>
+      </div>
+    )
+  }
 }
