@@ -1,0 +1,28 @@
+body{
+  text-align: center;
+}
+
+img{
+  width: 150px;
+  height: 200px;
+}
+
+.card{
+  margin:23px
+}
+
+.head-ing{
+  margin:25px ;
+}
+
+.card-img-top{
+  margin-top: 1.25rem;
+}
+
+.oneth{
+  padding-left: 0;
+}
+
+.twoth{
+padding-left: 100px;
+}

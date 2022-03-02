@@ -5,87 +5,87 @@ import loc from '../images/location.png'
 import em from '../images/email.png'
 import pn from '../images/phone.png'
 
-export default class Contact extends Component {
-  render() {
-    return <>
+export default function Contact() {
+    return ( 
+    <>
     <div>
-            <div class="container">
-      <span class="big-circle"></span>
-      <img src={shape} class="square" alt="" />
-      <div class="form">
-        <div class="contact-info">
-          <h3 class="title">Let's get in touch</h3>
-          <p class="text">
+            <div className="mainBox">
+      <span className="big-circle"></span>
+      <img src={shape} className="square" alt="" />
+      <div className="detailForm">
+        <div className="contactInformation">
+          <h3 className="contactInformationTitle">Let's get in touch</h3>
+          <p className="contactInformationText">
             Thanks for Joining Suvidha!!<br/>
             Linked In: Suvidha Foundation<br/>
             Instagram: SuvidhaFoundationedutech<br/>
             Youtube Channels: Suvidha Foundation, Codekaro Yaaro
           </p>
 
-          <div class="info">
-            <div class="information">
-              <img src={loc} class="icon" alt="" />
-              <p>H.No. 1951,W.N.4,Khaperkheda, Saoner,Nagpur</p>
+          <div className="suvidhaInfo">
+            <div className="suvidhaInformation">
+              <img src={loc} className="icon" alt="" />
+              <p style={{textAlign:'left'}}>H.No. 1951,W.N.4,Khaperkheda, Saoner,Nagpur</p>
             </div>
-            <div class="information">
-              <img src={em} class="icon" alt="" />
+            <div className="suvidhaInformation">
+              <img src={em} className="icon" alt="" />
               <p>Info@Suvidhafoundationedutech.Org</p>
             </div>
-            <div class="information">
-              <img src={pn} class="icon" alt="" />
+            <div className="suvidhaInformation">
+              <img src={pn} className="icon" alt="" />
               <p>7020044091</p>
             </div>
           </div>
 
-          <div class="social-media">
+          <div className="social-media">
             <p>Connect with us :</p>
-            <div class="social-icons">
+            <div className="social-icons">
               <a href="#">
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
               </a>
               <a href="#">
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </a>
               <a href="#">
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </a>
               <a href="#">
-                <i class="fab fa-linkedin-in"></i>
+                <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
           </div>
         </div>
 
-        <div class="contact-form">
-          <span class="circle one"></span>
-          <span class="circle two"></span>
+        <div className="contact-form">
+          <span className="circle one"></span>
+          <span className="circle two"></span>
 
           <form action="index.html" autocomplete="off">
-            <h3 class="title">Contact us</h3>
-            <div class="input-container">
-              <input type="text" name="name" class="input" placeholder='Username' />
+            <h3 className="contactInformationTitle">Contact us</h3>
+            <div className="inputBox">
+              <input type="text" name="name" className="directInput" placeholder='Username' />
               {/* <label for="">Username</label> */}
               {/* <span>Username</span> */}
             </div>
-            <div class="input-container">
-              <input type="email" name="email" class="input" placeholder='Email' />
+            <div className="inputBox">
+              <input type="email" name="email" className="directInput" placeholder='Email' />
               {/* <label for="">Email</label> */}
               {/* <span>Email</span> */}
             </div>
-            <div class="input-container">
-              <input type="tel" name="phone" class="input" placeholder='Phone'/>
+            <div className="inputBox">
+              <input type="tel" name="phone" className="directInput" placeholder='Phone'/>
               {/* <label for="">Phone</label> */}
               {/* <span>Phone</span> */}
             </div>
-            <div class="input-container textarea" placeholder='Message'>
-              <textarea name="message" class="input"></textarea>
+            <div className="inputBox textarea" placeholder='Message'>
+              <textarea name="message" className="directInput" placeholder='Feedback Us !!'></textarea>
               {/* <label for="">Message</label> */}
               {/* <span>Message</span> */}
             </div>
-            <input type="submit" value="Send" class="btn" />
+            <input type="submit" value="Send" className="submitSendButton" />
           </form>
         </div>
       </div></div></div>
-   </>;
+   </>
+    )
   }
-}

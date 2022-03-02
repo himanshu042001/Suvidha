@@ -1,0 +1,60 @@
+
+    #con958 {
+        width: 100vw;
+        height:100vh;
+    }
+    .assignmenth11{
+        color: azure;
+        background-color: black;
+        font-size: 20px;
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        
+    }
+    
+    .assignmenth11:hover{
+        color: darkorange;
+    }
+    
+    
+    .assignment1208{
+        font-size: 25px;
+    }
+    #btn988{
+        background-color: gold;
+        color: rgb(4, 4, 214);
+        position: center;
+        cursor: pointer;
+        font-size: 25px;
+        margin-left: 41%;
+        border-radius: 25px;
+        padding:0.5em;
+    }
+    
+    #btn988:hover{
+        color: azure;
+        background-color: black;
+    }
+    
+    .assignmentnewassignment{
+    margin-top:10px;
+    }
+    
+    
+    .assignmentup754{
+        border: 3px solid black;
+        width: 100%;
+        height: 500px;
+        background-color: white;
+        float: right;
+    }
+    
+    
+    #h236{
+        text-align: center;
+        font-size: 30px;
+    }
+    span{
+        color: red;
+    }

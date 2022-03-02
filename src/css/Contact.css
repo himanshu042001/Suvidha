@@ -4,15 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body,
-input,
-textarea {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+.mainBox {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -23,8 +18,11 @@ textarea {
   align-items: center;
   justify-content: center;
 }
-
-.form {
+.mainBox img {
+  width: 3em;
+  height: 3em;
+}
+.detailForm {
   width: 100%;
   max-width: 820px;
   background-color: #fff;
@@ -72,14 +70,15 @@ textarea {
   left: -13px;
 }
 
-form {
+.detailForm {
+  
   padding: 2.3rem 2.2rem;
   z-index: 10;
   overflow: hidden;
   position: relative;
 }
 
-.title {
+.contactInformationTitle {
   color: #fff;
   font-weight: 500;
   font-size: 1.5rem;
@@ -87,12 +86,12 @@ form {
   margin-bottom: 0.7rem;
 }
 
-.input-container {
+.inputBox {
   position: relative;
   margin: 1rem 0;
 }
 
-.input {
+input {
   width: 100%;
   outline: none;
   border: 2px solid #fafafa;
@@ -106,7 +105,7 @@ form {
   transition: 0.3s;
 }
 
-textarea.input {
+textarea input {
   padding: 0.8rem 1.2rem;
   min-height: 150px;
   border-radius: 22px;
@@ -114,7 +113,7 @@ textarea.input {
   overflow-y: auto;
 }
 
-.input-container label {
+.inputBox label {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -128,12 +127,12 @@ textarea.input {
   transition: 0.5s;
 }
 
-.input-container.textarea label {
+.inputBox.textarea label {
   top: 1rem;
   transform: translateY(0);
 }
 
-.btn {
+.submitSendButton {
   padding: 0.6rem 1.3rem;
   background-color: #fff;
   border: 2px solid #fafafa;
@@ -147,12 +146,12 @@ textarea.input {
   margin: 0;
 }
 
-.btn:hover {
+.submitSendButton:hover {
   background-color: transparent;
   color: #fff;
 }
 
-.input-container span {
+.inputBox span {
   position: absolute;
   top: 0;
   left: 25px;
@@ -164,8 +163,8 @@ textarea.input {
   z-index: 500;
 }
 
-.input-container span:before,
-.input-container span:after {
+.inputBox span:before,
+.inputBox span:after {
   content: "";
   position: absolute;
   width: 10%;
@@ -177,42 +176,42 @@ textarea.input {
   transform: translateY(-50%);
 }
 
-.input-container span:before {
+.inputBox span:before {
   left: 50%;
 }
 
-.input-container span:after {
+.inputBox span:after {
   right: 50%;
 }
 
-.input-container.focus label {
+.inputBox.focus label {
   top: 0;
   transform: translateY(-50%);
   left: 25px;
   font-size: 0.8rem;
 }
 
-.input-container.focus span:before,
-.input-container.focus span:after {
+.inputBox.focus span:before,
+.inputBox.focus span:after {
   width: 50%;
   opacity: 1;
 }
 
-.contact-info {
+.contactInformation {
   padding: 2.3rem 2.2rem;
   position: relative;
 }
 
-.contact-info .title {
+.contactInformation .contactInformationTitle {
   color: #1572A1;
 }
 
-.text {
+.contactInformationText {
   color: #333;
   margin: 1.5rem 0 2rem 0;
 }
 
-.information {
+.suvidhaInformation {
   display: flex;
   color: #555;
   margin: 0.7rem 0;
@@ -254,7 +253,7 @@ textarea.input {
   transform: scale(1.05);
 }
 
-.contact-info:before {
+.contactInformation:before {
   content: "";
   position: absolute;
   width: 110px;
@@ -298,11 +297,11 @@ textarea.input {
 }
 
 @media (max-width: 850px) {
-  .form {
+  .detailForm {
     grid-template-columns: 1fr;
   }
 
-  .contact-info:before {
+  .contactInformation:before {
     bottom: initial;
     top: -75px;
     right: 65px;
@@ -326,7 +325,7 @@ textarea.input {
     right: 50%;
   }
 
-  .text {
+  .contactInformationText {
     margin: 1rem 0 1.5rem 0;
   }
 
@@ -336,11 +335,11 @@ textarea.input {
 }
 
 @media (max-width: 480px) {
-  .container {
+  .mainBox {
     padding: 1.5rem;
   }
 
-  .contact-info:before {
+  .contactInformation:before {
     display: none;
   }
 
@@ -349,18 +348,18 @@ textarea.input {
     display: none;
   }
 
-  form,
-  .contact-info {
+  .detailForm,
+  .contactInformation {
     padding: 1.7rem 1.6rem;
   }
 
-  .text,
-  .information,
+  .contactInformationText,
+  .suvidhaInformation,
   .social-media p {
     font-size: 0.8rem;
   }
 
-  .title {
+  .contactInformationTitle {
     font-size: 1.15rem;
   }
 
@@ -374,11 +373,11 @@ textarea.input {
     width: 23px;
   }
 
-  .input {
+  .directInput {
     padding: 0.45rem 1.2rem;
   }
 
-  .btn {
+  .submitSendButton {
     padding: 0.45rem 1.2rem;
   }
 }

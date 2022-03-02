@@ -5,55 +5,55 @@ function StudentDashboard() {
   return <div>
           <div class="containe">
         <aside>
-            <div class="top">
+            <div class="topab">
                 <div class="logo">
                     <img src="insert logo here.jpg" />
-                    <h2>SUVIDHA</h2>
+                    <h3>SUVIDHA</h3>
                 </div>
-                <div class="close" id="close-btn">
+                <div class="closeabc" id="close-btn">
                     <span class="material-icons-sharp">
                         close
                         </span>
                 </div>
             </div>
-            <div class="sidebar">
-                <Link to="/StudentProfile">
+            <div class="sidebarabcd">
+                <Link to="/StudentProfile" style={{textDecoration:'none'}}>
                     <span class="material-icons-sharp">
                         person
                         </span>
                         <h3>My Profile</h3>
                 </Link>
-                <a href="#" class="active">
+                <Link to='/StudentDashboard' class="activenik" style={{textDecoration:'none'}}>
                     <span class="material-icons-sharp">
                         space_dashboard
                         </span>
                         <h3>Dashboard</h3>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to='/Classes' style={{textDecoration:'none'}}>
                     <span class="material-icons-sharp">
                         library_books
                         </span>
                         <h3>Courses</h3>
-                </a>
-                <Link to="/Progress">
+                </Link>
+                <Link to="/Progress" style={{textDecoration:'none'}}>
                     <span class="material-icons-sharp">
                         data_exploration
                         </span>
                         <h3>My progress</h3>
                 </Link>
-                <Link to="/Chatbox">
+                <Link to="/Chatbox" style={{textDecoration:'none'}}>
                     <span class="material-icons-sharp">
                         chat_bubble
                         </span>
                         <h3>Chatbox</h3>
                 </Link>
-                <a href="#">
+                <Link to='' style={{textDecoration:'none'}}>
                     <span class="material-icons-sharp">
                         shopping_cart
                         </span>
                         <h3>Cart</h3>
-                </a>
-                <Link to="/">
+                </Link>
+                <Link to="/" style={{textDecoration:'none'}}>
                     <span class="material-icons-sharp">
                         logout
                         </span>
@@ -63,7 +63,7 @@ function StudentDashboard() {
          </aside>
          <main>
            <h1>
-               DASHBOARD
+               STUDENT DASHBOARD
            </h1>
          </main>
         

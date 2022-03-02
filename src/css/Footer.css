@@ -29,26 +29,26 @@ footer::before{
   /* background: #AFAFB6; */
   border: none;
 }
-footer .content{
+footer .contentt{
   max-width: 1250px;
   margin: auto;
   padding: 30px 40px 40px 40px;
   border: none;
 }
-footer .content .top{
+footer .contentt .top{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
 }
-.content .top .logo-details{
+.contentt .top .logo-details{
   color: #fff;
   font-size: 30px;
 }
-.content .top .media-icons{
+.contentt .top .media-icons{
   display: flex;
 }
-.content .top .media-icons a{
+.contentt .top .media-icons a{
   height: 40px;
   width: 40px;
   margin: 0 8px;
@@ -95,22 +95,22 @@ footer .content .top{
   color: #FF0000;
   background: #fff;
 }
-footer .content .link-boxes{
+footer .contentt .link-boxxes{
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-footer .content .link-boxes .box{
+footer .contentt .link-boxxes .boxx{
   width: calc(100% / 5 - 10px);
 }
-.content .link-boxes .box .link_name{
+.contentt .link-boxxes .boxx .linkk_name{
   color: #fff;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
   position: relative;
 }
-.link-boxes .box .link_name::before{
+.link-boxxes .boxx .linkk_name::before{
   content: '';
   position: absolute;
   left: 0;
@@ -120,11 +120,11 @@ footer .content .link-boxes .box{
   background: #fff;
   border: none;
 }
-.content .link-boxes .box li{
+.contentt .link-boxxes .boxx li{
   margin: 6px 0;
   list-style: none;
 }
-.content .link-boxes .box li a{
+.contentt .link-boxxes .boxx li a{
   color: #fff;
   font-size: 14px;
   font-weight: 400;
@@ -132,14 +132,14 @@ footer .content .link-boxes .box{
   opacity: 0.8;
   transition: all 0.4s ease
 }
-.content .link-boxes .box li a:hover{
+.contentt .link-boxxes .boxx li a:hover{
   opacity: 1;
   text-decoration: underline;
 }
-.content .link-boxes .input-box{
+.contentt .link-boxxes .input-boxx{
   margin-right: 55px;
 }
-.link-boxes .input-box input{
+.link-boxxes .input-boxx input{
   height: 40px;
   width: calc(100% + 55px);
   outline: none;
@@ -151,11 +151,11 @@ footer .content .link-boxes .box{
   color: #fff;
   margin-top: 5px;
 }
-.link-boxes .input-box input::placeholder{
+.link-boxxes .input-boxx input::placeholder{
   color: #AFAFB6;
   font-size: 16px;
 }
-.link-boxes .input-box input[type="button"]{
+.link-boxxes .input-boxx input[type="button"]{
   background: #fff;
   color: #1572A1;
   border: none;
@@ -166,7 +166,7 @@ footer .content .link-boxes .box{
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.input-box input[type="button"]:hover{
+.input-boxx input[type="button"]:hover{
   opacity: 1;
 }
 footer .bottom-details{
@@ -196,10 +196,10 @@ footer .bottom-details .bottom_text{
   margin-right: 10px;
 }
 @media (max-width: 900px) {
-  footer .content .link-boxes{
+  footer .contentt .link-boxxes{
     flex-wrap: wrap;
   }
-  footer .content .link-boxes .input-box{
+  footer .contentt .link-boxxes .input-boxx{
     width: 40%;
     margin-top: 10px;
   }
@@ -208,19 +208,19 @@ footer .bottom-details .bottom_text{
   footer{
     position: relative;
   }
-  .content .top .logo-details{
+  .contentt .top .logo-details{
     font-size: 26px;
   }
-  .content .top .media-icons a{
+  .contentt .top .media-icons a{
     height: 35px;
     width: 35px;
     font-size: 14px;
     line-height: 35px;
   }
-  footer .content .link-boxes .box{
+  footer .contentt .link-boxxes .boxx{
     width: calc(100% / 3 - 10px);
   }
-  footer .content .link-boxes .input-box{
+  footer .contentt .link-boxxes .input-boxx{
     width: 60%;
   }
   .bottom-details .bottom_text span,
@@ -233,16 +233,16 @@ footer .bottom-details .bottom_text{
     top: 145px;
     border: none;
   }
-  footer .content .top{
+  footer .contentt .top{
     flex-direction: column;
   }
-  .content .top .media-icons{
+  .contentt .top .media-icons{
     margin-top: 16px;
   }
-  footer .content .link-boxes .box{
+  footer .contentt .link-boxxes .boxx{
     width: calc(100% / 2 - 10px);
   }
-  footer .content .link-boxes .input-box{
+  footer .contentt .link-boxxes .input-boxx{
     width: 100%;
   }
 }

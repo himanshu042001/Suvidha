@@ -1,11 +1,7 @@
-body {
-    color: #000;
-    overflow-x: hidden;
-    height: 100%;
-    background-color: #a4cde2;
-    background-repeat: no-repeat
-}
 
+#bg4189 {
+    background-color: white;
+}
 .card0 {
     box-shadow: 0px 4px 8px 0px #757575;
     border-radius: 30px

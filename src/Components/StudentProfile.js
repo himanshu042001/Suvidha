@@ -2,17 +2,15 @@ import React, { Component } from "react";
 import "../css/studentprofile.css";
 export default class StudentProfile extends Component {
   render() {
-    return<div>
+    return<div id="bg2033">
           <div className="student-profile py-4">
             <div className="container">
               <div className="row">
                 <div className="col-lg-4">
-                  <div className="card shadow-sm">
-                    <div className="card-header bg-transparent text-center">
+                  <div className="card-01 shadow-sm">
+                    <div className="card-header-01 bg-transparent text-center">
                       <img
                         className="profile_img"
-                        src="imgpr.png"
-                        alt="student dp"
                       />
                       <h3>Samita Chatterji</h3>
                     </div>
@@ -21,7 +19,7 @@ export default class StudentProfile extends Component {
                         <strong className="pr-1">Student ID:</strong>321000001
                       </p>
                       <p className="mb-0">
-                        <strong className="pr-1">Class:</strong>4
+                        <strong className="pr-1">Class:</strong>8
                       </p>
                       <p className="mb-0">
                         <strong className="pr-1">Activated:</strong>Yes
@@ -30,8 +28,8 @@ export default class StudentProfile extends Component {
                   </div>
                 </div>
                 <div className="col-lg-8">
-                  <div className="card shadow-sm">
-                    <div className="card-header bg-transparent border-0">
+                  <div className="card-01 shadow-sm">
+                    <div className="card-header-01 bg-transparent border-0">
                       <h3 className="mb-0">
                         <i className="far fa-clone pr-1"></i>General Information
                       </h3>
@@ -66,25 +64,25 @@ export default class StudentProfile extends Component {
                         <tr>
 
 
-                          <th width="30%">Religion</th>
+                          <th width="30%">Nationality</th>
                           <td width="2%">:</td>
-                          <td>Group</td>
+                          <td>Indian</td>
                         </tr>
                         </tbody>
                         <tbody>
                         <tr>
 
-                          <th width="30%">blood</th>
+                          <th width="30%">Age</th>
                           <td width="2%">:</td>
-                          <td>B+</td>
+                          <td>14</td>
                         </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
                   <div></div>
-                  <div className="card shadow-sm">
-                    <div className="card-header bg-transparent border-0">
+                  <div className="card-01 shadow-sm">
+                    <div className="card-header-01 bg-transparent border-0">
                       <h3 className="mb-0">
                         <i className="far fa-clone pr-1"></i>Other Information
                       </h3>

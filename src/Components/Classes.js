@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../filtclas.css'
+import '../css/filtclas.css'
 export default class Classes extends Component {
   constructor(props) {
     super(props);

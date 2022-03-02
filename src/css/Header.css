@@ -6,9 +6,10 @@
    flex-wrap: wrap;
 }
 .header-leftg img{
+    background-color: #1572A1;
     width: 75vw;
     height: 75vh;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 15px;
     border-radius:10px;
 }
 

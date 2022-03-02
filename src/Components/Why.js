@@ -8,7 +8,7 @@ export default class Why extends Component {
   render() {
     return <div>
         <section class="suvidha">
-      <h1>Why we learn on Suvidha ?</h1>
+      <h1 className='h1890'>Why we learn on Suvidha ?</h1>
       <div class="row">
 
         <div class="suvidha-col1">

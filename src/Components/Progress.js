@@ -1,80 +1,69 @@
 import React, { Component } from 'react'
-import "../css/Progress.css";
-
-
-import assignments from '../images/progressPage/assignments.jpg'
-import coursecontent from '../images/progressPage/coursecontent.jpg'
-import certification from '../images/progressPage/certification.jpg'
-import quiz from '../images/progressPage/quiz.jpg'
-
-
-
-
-
+import '../css/myprogress.css'
 export default class Progress extends Component {
   render() {
     return (
       <div>
         <div>
-        <section className='sec' >
-          <div className="video-containerr">
-            <div className="color-overlay"></div>
+        <section id="secProgress">
+          <div className="videoProg12">
+            <div className="clr-oly12"></div>
             <video autoplay loop muted>
               <source src="pic/Blue - 9809.mp4" type="video/mp4" />
             </video>
           </div>
-          <div className="containr">
-            <h1 className="headr">COURSE PROGRESS </h1>
-            <div id="stepProgressBar">
-              <div className="step">
-                <img className="coursepic" src={coursecontent} alt="" />
+          <div className="contProg12">
+            <h1 className="headProg12">COURSE PROGRESS </h1>
+            <div id="sPB12">
+              <div className="stpProg12">
+                <img className="coursepic" src="pic/course content.jpg" alt="" />
                 <br />
-                <p className="step-text">COURSE CONTENT</p>
-                <div className="bullt b1">
-                  <i className="fa fa-check"></i>{" "}
+                <p className="stpProg12-txtProg12">COURSE CONTENT</p>
+                <div className="bltpr12 bPr1">
+                  <i className="fadk fa-check"></i>{" "}
                 </div>
               </div>
-              <div className="step">
-                <img className="coursepic" src={assignments} alt="" />
+              <div className="stpProg12">
+                <img className="coursepic" src="pic/assignments.jpg" alt="" />
                 <br />
 
-                <p className="step-text">ASSIGNMENTS</p>
-                <div className="bullt b2">
+                <p className="stpProg12-txtProg12">ASSIGNMENTS</p>
+                <div className="bltpr12 bPr2">
                   <i className="fa fa-check"></i>
                 </div>
               </div>
-              <div className="step">
-                <img className="coursepic" src={quiz} alt="" />
+              <div className="stpProg12">
+                <img className="coursepic" src="pic/quiz.jpg" alt="" />
                 <br />
 
-                <p className="step-text">QUIZ</p>
-                <div className="bullt b3">
+                <p className="stpProg12-txtProg12">QUIZ</p>
+                <div className="bltpr12 bPr3">
                   <i className="fa fa-check"></i>
                 </div>
               </div>
-              <div className="step">
-                <img className="coursepic" src={certification} alt="" />
+              <div className="stpProg12">
+                <img className="coursepic" src="pic/certification.jpg" alt="" />
                 <br />
 
-                <p className="step-text">CERTIFICATION</p>
-                <div className="bullbulltt b4">
+                <p className="stpProg12-txtProg12">CERTIFICATION</p>
+                <div className="bltpr12 bPr4">
                   <i className="fa fa-check"></i>
                 </div>
               </div>
             </div>
-            <div id="main">
-              <div className="currently">
-                <p style={{fontSize : "30px"}  }>YOU HAVE COMPLETE - </p>
-                <p style={{fontSize : "30px"}}> PART-</p>
-                <p  id="content"  className="text-center" >
+            <div id="mainProg12">
+              <div className="currentlyProg12">
+                <p>YOU HAVE COMPLETE - </p>
+                <p> PART-</p>
+                <p id="contentProg12" className="text-centerProg12">
                   {" "}
                   1
                 </p>
               </div>
 
-              <button id="previousBtn">Previous</button>
-              <button id="nextBtn">Next</button>
-              <button id="finishBtn">Finish</button>
+              <button id="previousBtnProg12">Previous</button>
+              <button id="nextBtnProg12">Next</button>
+              <button id="finishBtnProg12">Finish</button>
             </div>
           </div>
         </section>

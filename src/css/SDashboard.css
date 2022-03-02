@@ -61,7 +61,7 @@ aside{
     height: 100vh;
     
 }
-aside .top{
+aside .topab{
     background: #fff;
     display: flex;
     align-items: center;
@@ -77,11 +77,11 @@ aside .logo{
     display: flex;
     gap: 0.8rem;
 }
-aside .close{
+aside .closeabc{
     display: none;
 }
     
-aside .sidebar{
+aside .sidebarabcd{
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -95,7 +95,7 @@ aside h3{
     font-weight: 500;
 }
 
-aside .sidebar a{
+aside .sidebarabcd a{
     display: flex;
     margin-left: 2rem;
     gap: 1rem;
@@ -106,36 +106,36 @@ aside .sidebar a{
     color: #7d8da1;
 }
 
-aside .sidebar a span {
+aside .sidebarabcd a span {
     font-size: 1.6rem;
     transition: all 300ms ease;
 }
 
-aside .sidebar a:last-child {
+aside .sidebarabcd a:last-child {
     position: absolute;
     bottom: 2rem;
     width: 100%;  
 }
 
-aside .sidebar a.active {
+aside .sidebarabcd a.activenik {
     background: rgba(132,139,200,0.18);
     color: #7380ec;
     margin-left: 0
     ;
 }
-aside .sidebar a.active:before {
+aside .sidebarabcd a.activenik:before {
     content: "";
     width: 6px;
     height: 100%;
     background: #7380ec;
 }
-aside .sidebar a.active span{
+aside .sidebarabcd a.activenik span{
     color: #7380ec;
     margin-left: calc(1rem - 3px);
 }
-aside .sidebar a:hover{
+aside .sidebarabcd a:hover{
     color: #7380ec;
 }
-aside .sidebar a:hover span {
+aside .sidebarabcd a:hover span {
     margin-left: 1rem;
 }

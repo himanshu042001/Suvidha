@@ -10,9 +10,13 @@
     text-align: center;
     /* padding-top: 100px; */
 }
-h1{
-    font-size: 36px;
-    font-weight: 600;
+.h1890{
+    font-size: 32px;
+    font-weight:bolder;
+    background-color:rgb(61, 145, 255);
+    border-radius:20px;
+    display: inline-flex;
+    padding: 0.35em;
 }
 p{
     color: #777;
@@ -35,7 +39,7 @@ p:hover {
 }    
 .suvidha-col1{
     flex-basis: 20%;
-    background: #fff3f3;
+    background-color: rgb(231, 241, 231);
     border-radius: 10px;
     margin:10px;
     margin-bottom: 5%;
@@ -48,7 +52,7 @@ p:hover {
 
 .suvidha-col2{
     flex-basis: 20%;
-    background: #fff3f3;
+    background-color: rgb(231, 241, 231);
     border-radius: 10px;
     margin:10px;
     margin-bottom: 5%;
@@ -61,7 +65,7 @@ p:hover {
 
 .suvidha-col3{
     flex-basis: 20%;
-    background: #fff3f3;
+    background-color: rgb(231, 241, 231);
     border-radius: 10px;
     margin:10px;
     margin-bottom: 5%;
