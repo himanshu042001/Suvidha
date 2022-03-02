@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <>
+      <div id="bg4189">
       <div className="container-fluid px-1 px-md-5 px-lg-1 px-xl-5  mx-auto">
         <div className="carde card0 border-0">
           <div className="row d-flex">
@@ -94,9 +95,9 @@ const Login = () => {
                 <div className="row mb-4 px-3">
                   <small className="font-weight-bold">
                     Don't have an account?
-                    <a className="text-danger " href="student-signup.html">
+                    <Link to='/Ssignup' className="text-danger">
                       Register
-                    </a>
+                    </Link>
                   </small>
                 </div>
               </div>
@@ -104,6 +105,7 @@ const Login = () => {
           </div>
           
         </div>
+      </div>
       </div>
     </>
   );
